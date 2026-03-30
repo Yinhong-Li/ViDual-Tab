@@ -1,0 +1,39 @@
+analysis:
+  flag: false
+  load_graph: false
+  load_graph_path: results/graph/gen
+  project: gsl
+  save_graph: false
+dataset:
+  EIGEN_VEC_NUM: 4
+  add_loop: true
+  cora_split: false
+  feat_norm: false
+  k: 20
+  normalize: true
+  sparse: true
+  without_structure: knn
+model:
+  act: relu
+  ci_dropout: 0.4114200589885857
+  ci_nhid: 96
+  gnn_dropout: 0.483551787486088
+  gnn_nhid: 320
+  graph_learn_num_pers: 8
+  hops: 2
+  mlp_dropout: 0.4440946744705899
+  mlp_layers: 5
+  mlp_nhid: 128
+  ratio_of_edge_insert: 0.01
+  spmm_type: 0
+training:
+  T_0: 8
+  criterion: metric
+  data_cpu: false
+  dta: 1.5
+  eta: 0.3
+  lr: 0.01
+  max_epochs: 10000
+  patience: 16
+  warm_up: 4
+  weight_decay: 5e-05

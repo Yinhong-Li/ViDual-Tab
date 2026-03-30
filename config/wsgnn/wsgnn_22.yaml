@@ -1,0 +1,40 @@
+analysis:
+  flag: false
+  load_graph: false
+  load_graph_path: results/graph/gen
+  project: gsl
+  save_graph: false
+dataset:
+  EIGEN_VEC_NUM: null
+  add_loop: true
+  cora_split: false
+  feat_norm: false
+  k: 5
+  normalize: true
+  sparse: true
+  without_structure: knn
+model:
+  act: relu
+  dropout: 0.5
+  graph_learn_num_pers: 1
+  graph_skip_conn: 0.9
+  input_dropout: 0
+  input_layer: false
+  mlp_layers: 2
+  n_hidden: 128
+  n_layers: 2
+  n_linear: 1
+  no_bn: false
+  norm:
+    flag: false
+    norm_type: BatchNorm1d
+  output_layer: false
+  spmm_type: 0
+  type: gcn
+training:
+  criterion: metric
+  data_cpu: false
+  lr: 0.001
+  max_epochs: 10000
+  patience: 16
+  weight_decay: 5e-06

@@ -1,0 +1,48 @@
+analysis:
+  flag: false
+  load_graph: false
+  load_graph_path: results/graph/gen
+  project: gsl
+  save_graph: false
+dataset:
+  EIGEN_VEC_NUM: null
+  add_loop: false
+  cora_split: false
+  feat_norm: false
+  k: 5
+  load_graph: false
+  normalize: false
+  sparse: true
+  without_structure: knn
+model:
+  activation_learner: relu
+  c: 0
+  contrast_batch_size: 0
+  dropedge_cls: 0.75
+  dropedge_rate: 0.25
+  dropout: 0.5
+  dropout_cls: 0.5
+  epochs: 1000
+  epochs_cls: 200
+  eval_freq: 50
+  hidden_dim_cls: 32
+  k: 30
+  maskfeat_rate_anchor: 0.6
+  maskfeat_rate_learner: 0.7
+  n_embed: 256
+  n_hidden: 512
+  n_layers: 2
+  n_layers_cls: 2
+  n_proj: 256
+  sim_function: cosine
+  sparse: true
+  tau: 0.9999
+  type: gcn
+  type_learner: mlp
+training:
+  criterion: metric
+  lr: 0.001
+  lr_cls: 0.001
+  patience: 16
+  w_decay_cls: 0.0005
+  wd: 5e-06
